@@ -25,7 +25,7 @@ namespace SimulacionTarea1
             {
                 Console.WriteLine("Probabilidad de Carta {0}:", x + 1);
                 cartas[x] = decimal.Parse(Console.ReadLine());
-                if (cartas[x] > total) { Console.WriteLine("No puedes asignarle una provavilidad mayor a la disponible"); }
+                if (cartas[x] > total) { Console.WriteLine("No puedes asignarle una probabilidad mayor a la disponible"); Environment.Exit(-1); }
                 total -= cartas[x];
                 Console.WriteLine("------------------------------------------");
 
